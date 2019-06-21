@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>Artificial Intelligence</title>
+</head>
+<body>
+<div id="container">
+	<header>
+		<h1>Lets Connect and Play with AI</h1>
+		<div id="roll"><h2>Online Users</h2><ul id="users"></ul><br class="clear"/></div>
+	</header>
+
+<!-- CHAT GUI -->
+	<main>
+		<div id="log_div">
+			<span id="input_label">Username: </span>
+			<input type="text" id="login_txt" />
+			<button id="btn_login">SIGN IN</button>
+
+		</div>
+		
+		 <form action="">
+		   <input type="text" id="txt_msg" autocomplete="off" />
+		   <input type="submit" id="btn_send" value="Send" />
+		   <button id="btn_quit">Leave Chat</button>
+		</form>
+		<ul id="messages"></ul>
+		<button id="gamebtn">START GAME</button>
+		<button id="newgamebtn">NEW GAME</button>
+		<div id="gameEnv">
+			<h2>MIND READING GAME</h2>
+			<h2>Follow instructions</h2>
+			<ol type="1">
+				<li class="instructions">Guess a number</li>
+				<li class="instructions">Multiply it by 2.</li>
+				<li class="instructions" id="dynamic_statement"> </li>
+				<li class="instructions">Divide the number by 2</li>
+				<li class="instructions">Subtract from the original number</li>
+			</ol>
+			<h2 id="final">Ready with the result??</h3><button id="gamefinish">YES</button>
+			
+		</div>
+		<h2 id="result"></h2>
+	</main>
+
+</div> <!--END container-->
+
+<!--INCLUDE LIBRARIES -->
+	<script src="/socket.io/socket.io.js"></script>
+	<script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+<script src="js/client.js"></script>
+</body></html>
